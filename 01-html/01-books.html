@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Exercise 01 - Books</title>
     <!-- It's generally not recommended to have CSS in the HTML file,  
      but since we haven't covered CSS yet in class, I'll add styles this way this one time -->
@@ -60,15 +59,15 @@
         <h2>First Edition Covers</h2>
         <img
           src="https://upload.wikimedia.org/wikipedia/en/9/93/AGameOfThrones.jpg"
-          alt="First edition book cover of A Game of Thrones by George R.R. Martin, featuring a medieval fantasy illustration"
+          alt="First edition cover of A Game of Thrones showing a knight on horseback against a dark castle backdrop"
         />
         <img
           src="https://upload.wikimedia.org/wikipedia/en/3/39/AClashOfKings.jpg"
-          alt="First edition book cover of A Clash of Kings by George R.R. Martin, featuring a medieval fantasy illustration"
+          alt="First edition cover of A Clash of Kings showing a crown engulfed in flames"
         />
         <img
           src="https://upload.wikimedia.org/wikipedia/en/2/24/AStormOfSwords.jpg"
-          alt="First edition book cover of A Storm of Swords by George R.R. Martin, featuring a medieval fantasy illustration"
+          alt="First edition cover of A Storm of Swords showing a sword hilt against a blue winter sky"
         />
       </section>
 
@@ -77,16 +76,16 @@
         <table>
           <thead>
             <tr>
-              <th rowspan="2">POV Character</th>
-              <th colspan="5">Books</th>
-              <th rowspan="2">Total Chapters</th>
+              <th scope="col" rowspan="2">POV Character</th>
+              <th scope="colgroup" colspan="5">Books</th>
+              <th scope="col" rowspan="2">Total Chapters</th>
             </tr>
             <tr>
-              <th>A Game of Thrones</th>
-              <th>A Clash of Kings</th>
-              <th>A Storm of Swords</th>
-              <th>A Feast for Crows</th>
-              <th>A Dance with Dragons</th>
+              <th scope="col">A Game of Thrones</th>
+              <th scope="col">A Clash of Kings</th>
+              <th scope="col">A Storm of Swords</th>
+              <th scope="col">A Feast for Crows</th>
+              <th scope="col">A Dance with Dragons</th>
             </tr>
           </thead>
           <tbody>
