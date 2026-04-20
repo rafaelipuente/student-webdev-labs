@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 01 - Audit</title>
+  </head>
+  <body>
+    <main>
+      <h1>Payment Information</h1>
+      <form>
+        <p>
+          <label for="name">Name:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            autocomplete="name"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="address">Address:</label><br />
+          <input
+            type="text"
+            id="address"
+            name="address"
+            autocomplete="street-address"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="city">City:</label><br />
+          <input
+            type="text"
+            id="city"
+            name="city"
+            autocomplete="address-level2"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="zip">Zip Code:</label><br />
+          <input
+            type="text"
+            id="zip"
+            name="zip"
+            autocomplete="postal-code"
+            inputmode="numeric"
+            required
+          />
+        </p>
+
+        <fieldset>
+          <legend>Credit Card Type:</legend>
+          <p>
+            <input
+              type="radio"
+              id="card-visa"
+              name="card"
+              value="visa"
+              required
+            />
+            <label for="card-visa">Visa</label>
+          </p>
+          <p>
+            <input type="radio" id="card-mc" name="card" value="mastercard" />
+            <label for="card-mc">MasterCard</label>
+          </p>
+          <p>
+            <input type="radio" id="card-amex" name="card" value="amex" />
+            <label for="card-amex">American Express</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="cc_number">Credit Card Number:</label><br />
+          <input
+            type="text"
+            id="cc_number"
+            name="cc_number"
+            autocomplete="cc-number"
+            inputmode="numeric"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="cvv">CVC:</label><br />
+          <input
+            type="text"
+            id="cvv"
+            name="cvv"
+            autocomplete="cc-csc"
+            inputmode="numeric"
+            required
+          />
+        </p>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
